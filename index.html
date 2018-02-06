@@ -27,7 +27,25 @@
             this.drinkSake = function(){
                 this.health += 10;
             }
+
+            this.punch = function( n ){
+                if( n instanceof Ninja )
+                    n.health -= 5;
+                else
+                    console.log("wrong class, we do not puch these guys")
+            }
+
+            this.kick = function( n ){
+                if( n instanceof Ninja )
+                    n.health -= ( 15 * strength );
+                else
+                    console.log("wrong class, we do not kick these guys")
+            }
         }
+
+        n = new Ninja( "Nonon" )
+        q = new Ninja( "Qonan" )
+        n.kick(q)
     
     
     </script>
