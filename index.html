@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+
+        function Ninja( name, health = 100 ){
+            const speed = 3;
+            const strength = 3;
+            
+            this.name = name;
+            this.health = health;
+
+            this.sayName = function(){
+                console.log( this.name );
+            };
+            
+            this.showStats = function(){
+                console.log( strength, speed, this.health );
+            };
+            
+            this.drinkSake = function(){
+                this.health += 10;
+            }
+        }
+    
+    
+    </script>
+    
+</body>
+</html>
